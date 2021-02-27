@@ -1,0 +1,52 @@
+{
+  "name": "capacitor-exit-app-ios",
+  "version": "1.1.0",
+  "description": "exit app on ios",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "swiftlint": "node-swiftlint",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@capacitor/core": "^1.5.3",
+    "@capacitor/ios": "^1.5.3",
+    "@ionic/swiftlint-config": "^1.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "swiftlint": "^1.0.1",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^1.5.3"
+  },
+  "files": [
+    "ios/",
+    "CapacitorExitAppIos.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "ios",
+    "exit app",
+    "quit app"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    }
+  },
+  "swiftlint": "@ionic/swiftlint-config",
+  "repository": {
+    "type": "git",
+    "url": "https://sample-git.com"
+  },
+  "bugs": {
+    "url": "capacitor-exit-app-ios/issues"
+  }
+}
